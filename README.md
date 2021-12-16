@@ -11,6 +11,7 @@
 ![Dark Theme Preview][2]
 
 ## Warning: you must install the “roboto” font included in the installer, you must open it with Winrar or Winzip to extract the fonts folder.
+---------
 
 ## Supported operating systems
 
@@ -21,7 +22,7 @@ This skin is compatible with the following operating systems
 | Linux            | :heavy_check_mark: |
 | Mac OS           | :heavy_check_mark: |
 | Windows          | :heavy_check_mark: |
-
+---------
 
 ## Changelog old
 > 
