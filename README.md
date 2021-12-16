@@ -38,9 +38,11 @@ This skin is compatible with the following operating systems
 > - The TeamSpeak logos were changed to the new ones that were added in the default mask.
 > - Added the new font in options headline title label that was changed in the default skin.
 > - Deleted the bold fonts from the menus.
-> 
 
-*[Official Forum Thread][10]
+
+Resources
+---------
+* [Official Forum Thread][10]
 
 [1]: https://teamspeak.com
 [2]: docs/preview.png "Dark Theme Preview"
