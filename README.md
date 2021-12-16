@@ -27,9 +27,9 @@
 > 
 > 
 
-## Supported search engines
+## Supported operating systems
 
-This extension is available in the below search engines.
+This skin is compatible with the following operating systems
 
 |        S.O       |     Compatible     |
 | ---------------- | ------------------ |
