@@ -40,9 +40,7 @@ This skin is compatible with the following operating systems
 > - Deleted the bold fonts from the menus.
 > 
 
-
-* [Project Website][9]
-* [Official Forum Thread][10]
+*[Official Forum Thread][10]
 
 [1]: https://teamspeak.com
 [2]: docs/preview.png "Dark Theme Preview"
