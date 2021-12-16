@@ -1,6 +1,6 @@
 ## Features
 
-* Original design of TeamSpeak 3 (as faithful as possible) in dark mode
+* Original design of TeamSpeak 3 (as closely as possible) in dark mode
 * Eye-friendly dark Colour Scheme (colors based on Windows 10's dark mode)
 * Sleek Design
 * Extended Info Display in English & Spanish
