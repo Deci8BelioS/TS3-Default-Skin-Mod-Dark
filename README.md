@@ -7,6 +7,12 @@
 * [Sky Iconpack by MCGamingDE](https://www.myteamspeak.com/addons/6af11627-81f3-4ba4-a611-ad6234c96fc4)
 * Easy installation and update process
 
+
+![Dark Theme Preview][2]
+
+
+
+
 ## Changelog old
 > 
 > **14 April 2020 - version 1.0.0**
@@ -37,3 +43,6 @@ This skin is compatible with the following operating systems
 | Mac OS           | :heavy_check_mark: |
 | Windows          | :heavy_check_mark: |
 
+
+
+[2]: docs/preview.png "Dark Theme Preview"
