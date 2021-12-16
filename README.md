@@ -10,7 +10,15 @@
 
 ![Dark Theme Preview][2]
 
+## Supported operating systems
 
+This skin is compatible with the following operating systems
+
+|        S.O       |     Compatible     |
+| ---------------- | ------------------ |
+| Linux            | :heavy_check_mark: |
+| Mac OS           | :heavy_check_mark: |
+| Windows          | :heavy_check_mark: |
 
 
 ## Changelog old
@@ -31,18 +39,14 @@
 > - Added the new font in options headline title label that was changed in the default skin.
 > - Deleted the bold fonts from the menus.
 > 
-> 
-
-## Supported operating systems
-
-This skin is compatible with the following operating systems
-
-|        S.O       |     Compatible     |
-| ---------------- | ------------------ |
-| Linux            | :heavy_check_mark: |
-| Mac OS           | :heavy_check_mark: |
-| Windows          | :heavy_check_mark: |
 
 
+* [Project Website][9]
+* [Official Forum Thread][10]
 
+[1]: https://teamspeak.com
 [2]: docs/preview.png "Dark Theme Preview"
+[3]: https://github.com/randomhost/teamspeak-dark/releases/latest
+[10]: https://community.teamspeak.com/t/new-update-2-december-skin-release-default-skin-mod-dark-normal-only-screen-4k-save-the-eyes-for-win-mac-os-linux/6122
+
+
