@@ -1,0 +1,111 @@
+/* CSS Document */
+body {
+	font-family: roboto;
+	font-size: 9px;
+	font-weight: bold;
+}
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.alert {
+	color: #ff0000;
+	font-weight: bold;
+}
+
+.table {
+	margin: 0px 5px;
+}
+
+.header {
+	font-family: 'roboto', roboto;
+	font-size: 40px;
+	white-space: nowrap;
+	font-weight: bold;
+}
+
+.headera {
+	font-family: 'roboto', roboto;
+	font-weight: bold;
+	font-size: 40px;
+	white-space: nowrap;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.subheader {
+	font-family: 'roboto', roboto;
+	font-size: 26px;
+	white-space: nowrap;
+	margin: 0px;
+	font-weight: bold;
+}
+
+.description {
+	font-size: 14px;
+}
+
+.active {
+	color: green;
+	text-decoration: underline;
+}
+.inactive {
+	color: gray;
+	text-decoration: underline;
+}
+.red {
+	color: red;
+}
+
+.orange {
+	color: #ec6600;
+}
+
+.blue {
+	color: blue;
+}
+
+table#info {
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+table#list {
+	border-collapse: collapse;
+	border-spacing: 0px;
+	margin-bottom: 10px;
+}
+
+td.label {
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+td.space {
+	padding-top: 6px;
+}
+td.list {
+	padding: 0px 1px 0px 0px;
+	vertical-align: top;
+}
+
+.hidden {
+	color: #ffffff;
+	font-size: 1px;
+}
+
+.servergroups {
+	padding: 2px 3px;
+}
+
+InfoFrame {
+	background-color: #434343;
+	border: 1px solid #d7d7d7;
+}

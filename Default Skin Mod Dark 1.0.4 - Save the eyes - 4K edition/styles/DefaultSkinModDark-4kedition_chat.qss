@@ -1,0 +1,370 @@
+/*
+ * TeamSpeak 3 Default Qt StyleSheet
+ * Special file for ChatLog, loaded in addition to global default.qss stylesheet
+ *
+ * Copyright (c) TeamSpeak Systems GmbH
+ *
+ * Supported HTML Subset:
+ * 
+ *  TeamSpeak 3's text chat is able to display rich text, specified using a very limited subset of HTML 4 markup.
+ *  Please refer to this page for more information:
+ *
+ *  http://qt-project.org/doc/qt-4.8/richtext-html-subset.html#css-properties
+ *
+ * ===
+ * === Chat Message Syntax Example:
+ * ===
+ *
+ *  <p class="{PRIMARY_CLASS}">
+ *    <span class="Body">
+ *      <img src="...">
+ *      <span class="{SECONDARY_CLASS}">...</span>
+ *      <a class="{SECONDARY_CLASS}" href="...">...</a>:
+ *      <spanclass="{SECONDARY_CLASS}">
+ *        ...
+ *      </span>
+ *  </p>
+ *
+ * ===
+ * === Primary Classes:
+ * ===
+ *  
+ *  - TextMessage_Normal                   :: informational message
+ *  - TextMessage_Welcome                  :: server welcome message
+ *  - TextMessage_HostMsg                  :: server host message
+ *  - TextMessage_Message                  :: text messages (details below)
+ *  - TextMessage_Poke                     :: poke messages
+ *  - TextMessage_Connected                :: own client connected to server
+ *  - TextMessage_Disconnected             :: own client disconnected from server
+ *  - TextMessage_ClientConnected          :: other client connected to server
+ *  - TextMessage_ClientDisconnected       :: other client connected from server
+ *  - TextMessage_ClientJoined             :: other client joined channel
+ *  - TextMessage_ClientLeft               :: other client left channel
+ *  - TextMessage_ClientSwitched           :: own/other client switched channel
+ *  - TextMessage_ClientDropped            :: own/other client timed out
+ *  - TextMessage_ClientKicked             :: own/other client kicked
+ *  - TextMessage_ClientBanned             :: own/other client banned
+ *  - TextMessage_ChannelCreated           :: channel created
+ *  - TextMessage_ChannelDeleted           :: channel deleted
+ *  - TextMessage_ChannelMoved             :: channel parent changed
+ *  - TextMessage_ChannelEdited            :: channel edited
+ *  - TextMessage_ServerEdited             :: server edited
+ *  - TextMessage_ServerError              :: server error
+ *  - TextMessage_GroupAssigned            :: channel/server group assigned
+ *  - TextMessage_GroupRevoked             :: channel/server group revoked
+ *  - TextMessage_TalkPowerAssigned        :: talk power granted
+ *  - TextMessage_TalkPowerRevoked         :: talk power revoked
+ *  - TextMessage_TalkPowerRequested       :: talk power requested
+ *  - TextMessage_BeginHistory             :: talk power revoked
+ *  - TextMessage_EndHistory               :: talk power revoked
+ *
+ *  The TextMessage_Message class can be used in combination with additional classes to identify specific messages.
+ *  Currently, we provide the following:
+ *
+ *	 *
+	 *  - Incoming                             :: incoming text messages
+	 *  - Outgoing                             :: outgoing text messages
+	 *  - Friend                               :: text messages sent by friends
+	 *  - Blocked                              :: text messages sent by blocked users
+	 *  - Private                              :: text messages in a private chat tab
+	 *  - Public                               :: text messages in a channel/server chat tab
+ *	 *
+ *
+ *  The CSS definition for a private text message sent by a friend would look like this:
+ *
+ *  .TextMessage_Message.Friend.Private { ... }
+ *
+ * ===
+ * === Secondary Classes (used within messages):
+ * ===
+ *  
+ *  - TextMessage_UserLink                 :: user nickname 
+ *  - TextMessage_ChannelLink              :: channel name
+ *  - TextMessage_ServerLink               :: server name
+ *  - TextMessage_OfflineLink              :: offline unread message(s) count
+ *  - TextMessage_Time                     :: message time
+ *  - TextMessage_Text                     :: message text
+ */
+ 
+/* @group Global Elements */
+
+p {
+	padding: 0px;
+	margin: 0px;
+}
+
+/* @end */
+
+/* ----- Link Style ---- */
+
+a {
+	color: rgb(66,127,241);
+		font-weight: bold;
+		text-decoration: none;
+	outline: none;
+}
+
+/* ---- END ---- */
+
+/* @group Time and History Elements */
+
+.TextMessage_Time {
+    color: rgb(255,255,255);
+		font-weight: normal;
+}
+
+.TextMessage_BeginHistory,
+.TextMessage_EndHistory {
+    color: rgb(31,132,139);
+	font-weight: bold;
+		font-style: italic;
+}
+
+/* @end */
+
+/* @group Object Link Elements */
+
+.TextMessage_UserLink {					/* Nombre usuario */
+	color: rgb(182,255,182);
+		font-weight: bold;
+		text-decoration: none;
+}
+
+.TextMessage_OfflineLink,				/* Nombre canal */
+.TextMessage_ChannelLink {
+	color: rgb(116,165,71);
+		font-weight: bold;
+		text-decoration: none;
+}
+
+/* @end */
+
+/* @group Colored Message Elements */
+
+.TextMessage_HostName,					/* Server Address */
+.TextMessage_ServerLink	{				/* Nombre servidor */
+	color: rgb(236,73,56);
+		font-weight: bold;
+}
+
+
+.TextMessage_Welcome,
+.TextMessage_HostMessage {
+	color: rgb(255,255,255);
+		font-weight: bold;
+}
+
+	
+.TextMessage_Poke,
+.TextMessage_Connected,
+.TextMessage_ClientConnected,
+.TextMessage_ClientJoined,
+.TextMessage_Disconnected,
+.TextMessage_ClientDisconnected,
+.TextMessage_ClientLeft,
+.TextMessage_ChannelCreated,
+.TextMessage_ChannelDeleted,
+.TextMessage_ChannelEdited,
+.TextMessage_ChannelMoved,
+.TextMessage_ServerEdited {
+	color: rgb(255,255,255);
+	font-weight: normal;
+}
+
+.TextMessage_Message,    /* lo que escribes o escriben*/
+.TextMessage_Normal {
+	color: rgb(49,167,89);
+	font-weight: bold;
+}
+
+.TextMessage_GroupAssigned,
+.TextMessage_GroupRevoked,
+.TextMessage_TalkPowerRequested {
+	color: rgb(103,101,178);
+		font-weight: bold;
+}
+
+.TextMessage_TalkPowerAssigned,
+.TextMessage_TalkPowerRevoked,
+.TextMessage_ClientSwitched {
+	color: #FFFFFF;
+	font-weight: normal;
+} 
+/* @end */
+
+/* @group Error Message Elements */
+
+
+.TextMessage_ServerError,
+.TextMessage_ClientDropped,
+.TextMessage_ClientKicked,
+.TextMessage_ClientBanned {
+	color: rgb(236,73,56);
+		font-weight: bold;
+}
+
+/* @group Infoframe Elements */
+
+	.Infoframe_text-left {
+		text-align: left;
+	}
+
+	.Infoframe_text-right {
+		text-align: right;
+	}
+
+	.Infoframe_text-center {
+		text-align: center;
+	}
+
+	.Infoframe_alert {
+		color: #ff0000;
+		font-weight: bold;
+		font-family: 'MS Shell Dlg 2';
+		font-size: 15px;
+	}
+
+	.Infoframe_table {
+		margin: 0px 10px;
+		font-family: 'MS Shell Dlg 2';
+		font-size: 11px;
+	}
+
+	.Infoframe_table_wrapper {
+		margin: 0px 5px;
+		font-family: 'MS Shell Dlg 2';
+		font-size: 15px;
+	}
+
+	.Infoframe_header {
+		font-family: 'MS Shell Dlg 2';
+		font-size: 18px;
+		white-space: nowrap;
+	}
+
+	.Infoframe_headera {
+		font-family: 'roboto';
+		font-size: 30px;
+		white-space: nowrap;
+		border-collapse: collapse;
+	}
+	
+	.Infoframe_server {
+		font-family: 'roboto';
+		font-size: 30px;
+		white-space: nowrap;
+		border-collapse: collapse;
+	    color: #EC4938;	
+		font-weight: bold;
+	}
+	
+	.Infoframe_canal {
+		font-family: 'roboto';
+		font-size: 30px;
+		white-space: nowrap;
+		border-collapse: collapse;
+	    color: #74A547;	
+	}
+
+	.Infoframe_subheader {
+		font-family: 'MS Shell Dlg 2';
+		font-size: 22px;
+		white-space: nowrap;
+		margin: 0px;
+		font-weight: bold;
+		border-collapse: collapse;
+	}
+
+	.Infoframe_channel-topic {
+		font-family: 'MS Shell Dlg 2';
+		font-size: 10px;
+		border-collapse: collapse;
+	}
+
+	.Infoframe_description-title {
+		font-family: 'MS Shell Dlg 2';
+		font-size: 15px;
+	}
+
+	.Infoframe_description-text {
+		font-family: 'MS Shell Dlg 2';
+		font-size: 15px;
+	}
+
+	.Infoframe_active {
+		color: #427FF1;
+		text-decoration: derline;
+				font-size: 16px;
+	}
+
+	.Infoframe_inactive {
+		color: #EF4938;
+		text-decoration: underline;
+				font-size: 16px;
+	}
+
+	.Infoframe_red {
+		color: #EF4938;
+		
+	}
+
+	.Infoframe_orange {
+		color: #ec6600;
+	}
+
+	.Infoframe_blue {
+		color: #427FF1;
+		font-size: 16px;
+        font-family: 'MS Shell Dlg 2';
+		border-collapse: collapse;
+	}
+	
+	.Infoframe_azul {
+		font-family: 'roboto';
+		font-size: 32px;
+		white-space: nowrap;
+		border-collapse: collapse;
+	}
+
+	.Infoframe_info {
+		border-collapse: collapse;
+		border-spacing: 0px;
+		font-family: 'MS Shell Dlg 2';
+		font-size: 14px;
+	}
+
+	.Infoframe_list {
+		border-collapse: collapse;
+		border-spacing: 0px;
+		margin-bottom: 10px;
+		font-family: 'MS Shell Dlg 2';
+		font-size: 16px;
+		/* padding: 0px 1px 0px 0px; */
+		vertical-align: top;
+	}
+
+	.Infoframe_label {
+		font-weight: bold;
+		white-space: nowrap;
+		font-size: 16px;
+	}
+
+	.Infoframe_space {
+		padding-top: 6px;
+	}
+
+	.Infoframe_nospace {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.Infoframe_hidden {
+		color: #ffffff;
+		font-size: 1px;
+	}
+
+	.Infoframe_servergroups {
+		padding: 2px 3px;
+	}
+
+/* @end */
